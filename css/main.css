@@ -1,0 +1,802 @@
+/*! HTML5 Boilerplate v7.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 2.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/******** GENERAL STYLES ********/
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-size: 1em;
+  font-family: "source sans pro", sans-serif;
+  color: #2b2b2b;
+}
+
+img {
+  width: 100%;
+}
+
+p {
+  font-size: 0.75em;
+}
+
+.content-wrapper {
+  width: 90%;
+  margin: 20px 0;
+}
+
+/******** HEADER ********/
+
+header {
+background: url('../img/hero.png') #ebebeb;
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+display: flex;
+justify-content: center;
+flex-flow: row wrap;
+min-height: 200px;
+}
+
+header .content-wrapper {
+  margin: 0 0 20px 0;
+}
+
+header h1 {
+  color: #bbc085;
+  font-size: 1.875em;
+  padding: 20px;
+}
+
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+header nav ul li {
+  list-style-type: none;
+}
+
+header nav ul li a {
+  color: #9b9b9b;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 0.8em;
+  padding: 10px;
+}
+
+.title h1 {
+  font-size: 1.1em;
+  margin: 0;
+  padding: 0;
+}
+
+.sub-title h2 {
+  color: #9b9b9b;
+  font-size: 1.3em;
+  font-family: 'lora', serif;
+  margin: 20px 0;
+  width: 70%;
+}
+
+header h2 span {
+  color: #2b2b2b;
+}
+
+/******** ABOUT SECTION ********/
+
+#about {
+  display: flex;
+  justify-content: center;
+}
+
+#about h2 {
+  font-size: 0.9em;
+}
+
+#about p {
+  color: #888888;
+  line-height: 1.5;
+}
+
+/******** WORK SECTION ********/
+
+#work {
+  display: flex;
+  justify-content: center;
+  background: #f9ceb7;
+}
+
+.work-blocks {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.w-block-one,
+.w-block-two,
+.w-block-three {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 10px 0;
+}
+
+.work-blocks figure {
+  width: 15%;
+}
+
+.work-blocks h3 {
+  font-size: 0.8em;
+  margin: 5px 0;
+}
+
+.work-blocks p {
+  margin: 5px 0;
+  text-align: center;
+  width: 65%;
+}
+
+/******** FOOTER STYLES ********/
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-block {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-text-block h2 {
+  font-size: 0.95em;
+  margin: 10px 0;
+}
+
+.contact-text-block h3 {
+  font-size: 0.85em;
+  font-weight: lighter;
+  margin: 10px 0;
+}
+
+#email-link  {
+  color: #c49075;
+  text-decoration: none;
+  font-size: 0.9em;
+  }
+
+  .contact-text-block ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+
+  .contact-text-block ul li {
+    list-style-type: none;
+    padding: 0 20px 10px;
+  }
+
+  .contact-text-block i {
+    color: #c49075;
+    font-size: 0.9em;
+  }
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+  display: none !important;
+}
+
+/*
+* Hide only visually, but have it available for screen readers:
+* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+*
+* 1. For long content, line feeds are not interpreted as spaces and small width
+*    causes content to wrap 1 word per line:
+*    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+*/
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+* Extends the .sr-only class to allow the element
+* to be focusable when navigated to via the keyboard:
+* https://www.drupal.org/node/897638
+*/
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+* Hide visually and from screen readers, but maintain layout
+*/
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+* Clearfix: contain floats
+*
+* For modern browsers
+* 1. The space content is one way to avoid an Opera bug when the
+*    `contenteditable` attribute is included anywhere else in the document.
+*    Otherwise it causes space to appear at the top and bottom of elements
+*    that receive the `clearfix` class.
+* 2. The use of `table` rather than `block` is only necessary if using
+*    `:before` to contain the top-margins of child elements.
+*/
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 768px) {
+
+  .content-wrapper {
+    width: 692px;
+    margin: 20px 0;
+  }
+
+  p {
+    font-size: 0.9em;
+  }
+
+  header {
+    min-height: 400px;
+  }
+
+
+  .title h1 {
+    font-size: 1.9em;
+  }
+
+  .sub-title {
+    width: 70%;
+  }
+
+  .sub-title h2 {
+    padding-top: 30px;
+    font-size: 2em;
+  }
+
+  header nav ul li a {
+    font-size: 1.2em;
+    padding: 0 20px;
+  }
+
+  #about h2 {
+    font-size: 1.3em;
+  }
+
+  .paragraph-blocks {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .p-block-one,
+  .p-block-two {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 40%;
+    margin: 0 10px 0 20px;
+  }
+
+  #about p {
+    color: #888888;
+    line-height: 1.7;
+  }
+
+  .work-blocks h3 {
+    font-size: 1.15em;
+  }
+
+  .work-blocks figure {
+    width: 15%;
+  }
+
+  footer figure {
+    width: 60%;
+  }
+
+  .contact-text-block h2 {
+    font-size: 1.15em;
+  }
+
+  .contact-text-block h3 {
+    font-size: 1.1em;
+  }
+
+  #email-link {
+    font-size: 1em;
+  }
+
+  .contact-text-block i {
+    font-size: 1.1em;
+  }
+
+}
+
+@media only screen and (min-width: 1024px) {
+
+  .content-wrapper {
+    max-width: 922px;
+  }
+
+  header {
+    min-height: 700px;
+  }
+
+  p {
+    font-size: 1em;
+  }
+
+  .title h1 {
+    font-size: 2em;
+  }
+
+  .sub-title {
+    width: 85%;
+  }
+
+  .sub-title h2 {
+    padding-top: 30px;
+    font-size: 3em;
+  }
+
+  header nav ul li a {
+    font-size: 1.3em;
+    padding: 0 20px;
+  }
+
+  #about h2 {
+    font-size: 1.7em;
+  }
+
+  .paragraph-blocks {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .p-block-one,
+  .p-block-two {
+    width: 100%;
+  }
+
+  .p-block-two {
+    margin-left: 50px;
+  }
+
+
+  #about p {
+    color: #888888;
+    line-height: 1.7;
+  }
+
+  .work-blocks h3 {
+    font-size: 1.3em;
+  }
+
+  .work-blocks figure {
+    width: 15%;
+  }
+
+  footer figure {
+    width: 70%;
+  }
+
+  .contact-text-block h2 {
+    font-size: 1.3em;
+  }
+
+  .contact-text-block h3 {
+    font-size: 1.3em;
+  }
+
+  #email-link {
+    font-size: 1.3em;
+  }
+
+  .contact-text-block i {
+    font-size: 1.4em;
+  }
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+  .content-wrapper {
+    max-width: 1100px;
+  }
+
+  header {
+    min-height: 700px;
+  }
+
+  p {
+    font-size: 1em;
+  }
+
+  header .content-wrapper {
+    width: 100%;
+  }
+
+  .title h1 {
+    font-size: 2em;
+  }
+
+  header .sub-title {
+    width: 60%;
+  }
+
+  .sub-title h2 {
+    padding-top: 50px;
+    font-size: 3.5em;
+    width: 100%;
+  }
+
+  header nav ul li a {
+    font-size: 1.1em;
+    padding: 0 40px;
+  }
+
+  #about h2 {
+    font-size: 1.9em;
+  }
+
+  #about .content-wrapper {
+    margin: 30px 0;
+    width: 100%;
+  }
+
+  .paragraph-blocks {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+  }
+
+  .p-block-one,
+  .p-block-two {
+    align-content: space-between;
+    width: 100%;
+  }
+
+  .p-block-two {
+    margin-left: 50px;
+  }
+
+
+  #about p {
+    color: #888888;
+    line-height: 2;
+  }
+
+  #work {
+    display: flex;
+    width: 100%;
+  }
+
+  #work .content-wrapper {
+    margin: 30px 0;
+    width: 100%;
+  }
+
+  .work-blocks {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .w-block-one,
+  .w-block-two,
+  .w-block-three {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    margin: 0 30px;
+    width: 25%;
+  }
+
+  .w-block-three {
+    margin: 0;
+    align-self: stretch;
+  }
+
+  .w-block-three h3 {
+    padding-bottom: 0;
+  }
+
+  .w-block-three p {
+    padding-bottom: 30px;
+  }
+
+  .work-blocks h3 {
+    font-size: 1.3em;
+    text-align: center;
+    margin: 10px 0;
+    width: 60%;
+  }
+
+  .work-blocks figure {
+    margin: 10px 0;
+    width: 15%;
+  }
+
+  .work-blocks p {
+    width: 90%;
+  }
+
+  #contact .content-wrapper {
+    margin: 40px 0;
+    width: 100%;
+  }
+
+  .contact-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  footer figure {
+    width: 40%;
+  }
+
+  .contact-text-block {
+    margin-right: 150px;
+  }
+
+  .contact-text-block h2 {
+    font-size: 1.3em;
+  }
+
+  .contact-text-block h3 {
+    font-size: 1.3em;
+  }
+
+  #email-link {
+    font-size: 1.3em;
+  }
+
+  #socialmedia-header {
+    margin-top: 50px;
+  }
+
+  .contact-text-block i {
+    font-size: 1.8em;
+  }
+
+
+}
+
+
+
+
+
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *:before,
+  *:after {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+  /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
+  pre {
+    white-space: pre-wrap !important;
+  }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  /*
+     * Printing Tables:
+     * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+  thead {
+    display: table-header-group;
+  }
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
